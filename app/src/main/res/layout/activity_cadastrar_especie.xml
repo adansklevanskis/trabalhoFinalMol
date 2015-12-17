@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.trabalhomol.adans.especiesdeanimais.CadastrarEspecieActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Nome Comum"
+            android:id="@+id/textView3" />
+
+        <EditText
+            android:layout_width="255dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName|text"
+            android:ems="10"
+            android:id="@+id/txtNome"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/txtCientifico"
+            android:layout_alignEnd="@+id/txtCientifico" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Nome cientifico"
+            android:id="@+id/textView2" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/txtCientifico"
+            android:layout_below="@+id/txtNome"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="103dp"
+            android:inputType="text" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salvar"
+            android:id="@+id/btnSalvar"
+            android:layout_below="@+id/txtCientifico"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="103dp" />
+    </LinearLayout>
+
+</RelativeLayout>
